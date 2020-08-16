@@ -17,12 +17,12 @@ mkdir -p <ipod_mountpoint>/iPod_Control/Music && mkdir -p <ipod_mountpoint>/iPod
 ls <ipod_mountpoint>/iPod_Control/Music/ > ./Music_List.txt
 ```
 
-6 Run the app
+6. Run the app
 
 ```bash
 ./ipod_db_builder
 ```
-7 Copy "iTunesSD" into the iPod
+7. Copy "iTunesSD" into the iPod
 
 ```bash
 cp iTunesSD <ipod_mountpoint>/iPod_Control/iTunes/iTunesSD
