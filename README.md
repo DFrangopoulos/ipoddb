@@ -1,34 +1,39 @@
 # ipoddb
 
-Build the database file for an iPod Shuffle 4th Gen. ONLY MP3s supported.
+Build the database file for an iPod Shuffle 4th Gen on Linux without the need for Itunes. ONLY MP3s supported.
+This will require a comppletely wiped and FAT32 formatted iPod Shuffle 4th Gen. PROCEED AT YOUR OWN RISK!
 
+## Compilation
+Just run:
+```bash
+make
+```
 ## Running
-1. Clone repo.
-2. Mount iPod and completely wipe it.
-3. Create Folders:
 
+1. Create the following folders at the root of the iPod:
 ```bash
 mkdir -p <ipod_mountpoint>/iPod_Control/Music && mkdir -p <ipod_mountpoint>/iPod_Control/iTunes
 ```
-4. Place all music (mp3s only) into <ipod_mountpoint>/iPod_Control/Music/
-5. Create a list of all tracks using:
 
+2. Place all music (mp3s only) into <ipod_mountpoint>/iPod_Control/Music/
+
+3. Create a list of all tracks using:
 ```bash
 ls <ipod_mountpoint>/iPod_Control/Music/ > ./Music_List.txt
 ```
 
-6. Run the app
-
+4. Run the app which will generate the "iTunesSD" file
 ```bash
-./ipod_db_builder
+./obj/iPod_DB_Builder
 ```
-7. Copy "iTunesSD" into the iPod
 
+5. Copy "iTunesSD" into the iPod
 ```bash
 cp iTunesSD <ipod_mountpoint>/iPod_Control/iTunes/iTunesSD
 ```
 
 #References
+Many thanks to nims11 for providing the database structure!
 ```bash
 https://github.com/nims11/IPod-Shuffle-4g/blob/master/docs/iTunesSD3gen.md
 ```
