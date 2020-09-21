@@ -28,5 +28,7 @@ ls <ipod_mountpoint>/iPod_Control/Music/ > ./Music_List.txt
 cp iTunesSD <ipod_mountpoint>/iPod_Control/iTunes/iTunesSD
 ```
 
-## TODO
-- Add makefile
+#References
+```bash
+https://github.com/nims11/IPod-Shuffle-4g/blob/master/docs/iTunesSD3gen.md
+```
