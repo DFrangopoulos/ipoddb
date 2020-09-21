@@ -1,7 +1,7 @@
 # ipoddb
 
-Build the database file for an iPod Shuffle 4th Gen on Linux without the need for Itunes. ONLY MP3s supported.
-This will require a comppletely wiped and FAT32 formatted iPod Shuffle 4th Gen. PROCEED AT YOUR OWN RISK!
+Build the database file for an iPod Shuffle 4th Gen on Linux without the need for iTunes. Only MP3s are currently supported!
+This will require a completely wiped and FAT32 formatted iPod Shuffle 4th Gen. PROCEED AT YOUR OWN RISK!
 
 ## Compilation
 Just run:
