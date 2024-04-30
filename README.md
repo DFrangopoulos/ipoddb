@@ -19,7 +19,7 @@ ls <ipod_mountpoint>/iPod_Control/Music/ > ./Music_List.txt
 
 4. Run the app which will generate the "iTunesSD" file
 ```bash
-./obj/iPod_DB_Builder
+ipoddb
 ```
 
 5. Copy "iTunesSD" into the iPod
